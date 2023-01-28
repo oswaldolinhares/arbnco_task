@@ -9,7 +9,12 @@ default: &default
 
 development:
   <<: *default
+  database: arbnco_development
 
 test:
   <<: *default
-  
+  database: arbnco_app_test
+
+production:
+  <<: *default
+  database: arbnco_production

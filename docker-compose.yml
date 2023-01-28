@@ -7,7 +7,7 @@ services:
       - postgres_data:/var/lib/postgresql/data
     command: "postgres -c 'max_connections=500'"
     environment:
-      POSTGRES_DB: arbnco_task
+      POSTGRES_DB: arbnco_development
       POSTGRES_USER: arbnco_task
       POSTGRES_PASSWORD: arbnco_task
     ports:
@@ -17,7 +17,7 @@ services:
     command: "bundle exec rails s -p 3000 -b '0.0.0.0'"
     environment:
       DB_HOST: db
-      DB_NAME: arbnco_task
+      DB_NAME: arbnco_development
       DB_USERNAME: arbnco_task
       DB_PASSWORD: arbnco_task
     volumes:
