@@ -5,4 +5,14 @@ class UserSubmission < ApplicationRecord
 
   validates :email, presence: true, format: { with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i },
                     length: { in: 10..256 }
+
+  after_save :process_files
+
+  private
+
+  def process_files
+    files.each do |file|
+      ProcessFileWorker.perform_async(file.id, email, files.last.id)
+    end
+  end
 end
