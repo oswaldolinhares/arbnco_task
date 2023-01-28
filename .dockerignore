@@ -1,0 +1,23 @@
+/public/*
+/storage/*
+/vendor/*
+
+public
+vendor
+.bundle
+.ruby-version
+**/.DS_Store
+**/node_modules
+
+
+## git
+.git
+.gitignore
+
+## log
+/log/*
+log
+tmp
+
+## docker
+.dockerignore
