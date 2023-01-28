@@ -43,6 +43,6 @@ class UserSubmissionsController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def user_submission_params
-    params.require(:user_submission).permit(:email)
+    params.require(:user_submission).permit(:email, files: [])
   end
 end

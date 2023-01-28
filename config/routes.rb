@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
-  resources :user_submissions, only: %i[index new create show]
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  root to: 'user_submissions#new', as: :root
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  resources :user_submissions, only: %i[index new create show]
 end
