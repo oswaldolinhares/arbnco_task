@@ -1,0 +1,27 @@
+ <tbody>
+    <tr>
+      <td>
+        <%= import.file_name %>
+      </td>
+
+      <td>  
+        <%= import.user_submission_email %>
+      </td>
+
+      <td>  
+        <%= import.fields %>
+      </td>
+
+      <td>  
+        <%= import.created_at %>
+      </td>
+
+      <td colspan="4">
+        <% if action_name != "show" %>
+          <%= link_to "VER", import, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+        <% end %>
+      </td>
+    </tr>
+  </tbody>
+
+

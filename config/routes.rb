@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   root to: 'user_submissions#new', as: :root
 
   resources :user_submissions, only: %i[index new create show]
+  resources :imports, only: %i[index show]
 end
