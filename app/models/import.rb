@@ -2,6 +2,7 @@
 
 class Import < ApplicationRecord
   belongs_to :user_submission
+  has_many :object_items, dependent: :destroy
 
   delegate :file_name, to: :import_type, prefix: true
   delegate :email, to: :user_submission, prefix: true

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_01_30_194059) do
+ActiveRecord::Schema[7.0].define(version: 2023_01_30_194060) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "hstore"
   enable_extension "plpgsql"
@@ -52,6 +52,17 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_30_194059) do
     t.index ["user_submission_id"], name: "index_imports_on_user_submission_id"
   end
 
+  create_table "object_items", force: :cascade do |t|
+    t.bigint "import_id", null: false
+    t.string "name"
+    t.bigint "object_type_id", null: false
+    t.hstore "properties"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["import_id"], name: "index_object_items_on_import_id"
+    t.index ["object_type_id"], name: "index_object_items_on_object_type_id"
+  end
+
   create_table "object_types", force: :cascade do |t|
     t.string "name", null: false
     t.datetime "created_at", null: false
@@ -67,4 +78,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_30_194059) do
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
   add_foreign_key "imports", "user_submissions"
+  add_foreign_key "object_items", "imports"
+  add_foreign_key "object_items", "object_types"
 end
