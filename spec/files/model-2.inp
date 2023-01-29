@@ -1,0 +1,1314 @@
+"SBEM-PROJECT" = GENERAL
+B-TYPE = A1/A2 Retail and Financial/Professional services
+WEATHER = LON
+P-NAME = "Unit 11A, Eastgate Shopping Centre, Basildon, SS14 1EB"
+B-ADDRESS-0 = "UNIT 11A"
+B-ADDRESS-1 = "Eastgate Centre"
+B-CITY = "BASILDON"
+B-POSTCODE = "SS14 1AF"
+C-NAME = "Shayn Bennett"
+C-TELEPHONE = "01225 753755"
+C-ADDRESS = "11 Dunkirk Business Park, Southwick"
+C-EMAIL = "sbennett@co2estates.com"
+C-ACCRED-SCHEME-WEB = "http://www.bre.co.uk"
+C-CITY = "Trowbridge"
+C-POSTCODE = "BA14 9NL"
+C-REG-NUMBER = "BREC400475"
+C-REG-NUMBER-S = "BREC090794"
+C-REG-NUMBER-IR = "000000"
+C-ACCRED-SCHEME = Bre
+C-EMP-TRAD-NAME = "CO2Estates-British Land"
+C-EMP-TRAD-ADDRESS = "11 Dunkirk Business Park, Southwick, Trowbridge, BA14 9NL"
+C-EMP-TRAD-NUMBER = "My trading number"
+C-REL-PART-DISC = Not related to the owner
+TRANSACTION-TYPE = Mandatory issue (Property to let)
+C-QUALIFICATIONS = NOS4
+SOFT-COMP-NAME = CLG
+INTERFACE-VAL = iSBEM
+INTERFACE = iSBEM
+INTERFACE-VERSION = v4.1.e
+PATH-FILE-INTERFACE = "\\SERVER1\Public\SERVER1\GreenRock\iSBEM_v4.1.e\Projects\Unit 11A, Eastgate Shopping Centre, Basildon, SS14 1EB.nct"
+ACT-NOT = ACT
+BUILDING-AREA = 194
+ELEC-POWER-FACTOR = <0.9
+NOS-LEVEL = Level 3
+C-INSURER = "Royal and Sun Alliance Insurance plc"
+C-INS-POL-NUMBER = "200903139"
+C-INS-EFF-DATE = "2012-08-01"
+C-INS-EXP-DATE = "2013-07-31"
+C-INS-PI-LIMIT = "2000000"
+B-INSP-DATE = { 2013, 06, 26 }
+UPRN = "999999920046"
+LANDMARK-ENVIRONMENT = www
+LIGHT-METERING = 1
+BUILD-ORIENTATION = 0
+HTML-DR-REPORTS = YES
+MAX-STOREY = 1
+ ..
+
+"SBEM" = COMPLIANCE
+EPC-TYPE = EPC England
+ENG-HERITAGE = NO
+BR-STAGE = As built
+AIR-CON-INSTALLED = Yes
+AIR-CON-KW = Between 12kW and 250kW
+AIR-CON-INSPECTION = Don't know
+ALT-SYS-CONSIDER = { 0, 0, 0, 0, 0, 0 }
+ ..
+
+"Seperating UNC" = CONSTRUCTION
+TYPE = U_VALUE
+U-VALUE = 0.5
+U-VALUE-CORR = NO
+CM = { 10, 20 }
+METAL-CLADDING = NO
+ ..
+
+"Basic construction for walls" = CONSTRUCTION
+TYPE = U_VALUE
+U-VALUE = 0.32
+U-VALUE-CORR = NO
+CM = { 51, 51 }
+METAL-CLADDING = NO
+ ..
+
+"Basic construction for roofs" = CONSTRUCTION
+TYPE = U_VALUE
+U-VALUE = 0.24
+U-VALUE-CORR = NO
+CM = { 18.04, 18.04 }
+METAL-CLADDING = NO
+ ..
+
+"Basic construction for floors" = CONSTRUCTION
+TYPE = U_VALUE
+U-VALUE = 0.33
+U-VALUE-CORR = NO
+CM = { 24.2, 30 }
+METAL-CLADDING = NO
+ ..
+
+"Basic construction for doors" = CONSTRUCTION
+TYPE = U_VALUE
+U-VALUE = 0.4
+U-VALUE-CORR = NO
+CM = { 15, 30 }
+METAL-CLADDING = NO
+ ..
+
+"Int" = CONSTRUCTION
+TYPE = U_VALUE
+U-VALUE = 0.65
+U-VALUE-CORR = NO
+CM = { 33.8, 158.3 }
+METAL-CLADDING = NO
+ ..
+
+"Stud" = CONSTRUCTION
+TYPE = U_VALUE
+U-VALUE = 0.42
+U-VALUE-CORR = NO
+CM = { 11.7, 11.7 }
+METAL-CLADDING = NO
+ ..
+
+"N/G" = CONSTRUCTION
+TYPE = U_VALUE
+U-VALUE = 3.0
+U-VALUE-CORR = NO
+CM = { 1, 1 }
+METAL-CLADDING = NO
+ ..
+
+"Seperating CAS" = CONSTRUCTION
+TYPE = U_VALUE
+U-VALUE = 0.5
+U-VALUE-CORR = NO
+CM = { 10, 20 }
+METAL-CLADDING = NO
+ ..
+
+"Basic glazing" = GLASS
+U-VALUE = 3.279
+TOT-SOL-TRANS = 0.858
+LIG-SOL-TRANS = 0.898
+ ..
+
+"SAW" = DHW-GENERATOR
+ISBEM-ID = 11
+HEAT-GEN-TYPE = Stand-alone water heater
+DHW-GEN-SEFF = 1
+FUEL-TYPE = Grid Supplied Electricity
+STORE-SYSTEM = YES
+STORE-VOL = 20
+STORE-INSULAT-TYPE = Factory insulated
+STORE-INSULAT-THICK = 25
+SEC-CIRCULATION = NO
+ ..
+
+"U/E" = HVAC-SYSTEM
+ISBEM-ID = 12
+TYPE = Other local room heater - unfanned
+HEAT-SOURCE = Direct or storage electric heater
+CHP = NO
+FUEL-TYPE = Grid Supplied Electricity
+FUEL-TYPE-COOL = Grid Supplied Electricity
+HEAT-REC-SYSTEM = No heat recovery
+HEAT-REC-SEFF = 0
+HEAT-REC-VAR-EFF = NO
+COOL-SSEER = 999999
+HEAT-SSEFF = 0.9
+AUX-ENERGY-CORR = 0
+VARIABLE-SPEED-PUMP = NO
+HEAT-GEN-SEFF = 1
+EFF-DEFAULT-HEAT = NO
+METERING = 1
+SFP-CHECK = NO
+ROOM-TIME-CTRL = YES
+ROOM-TEMP-CTRL = YES
+ ..
+
+"Z0/02" = ZONE
+ISBEM-ID = 12
+ACTIVITY = 1077
+ACTIVITY-NAME = Toilet
+MULTIPLIER = 1
+AREA = 30.0
+HEIGHT = 4.5
+VENT-ZONE-HVAC = ZONE
+Q-V-TYPE = Mechanical
+F-CTRL-VENT-DEM = No demand-controlled ventilation
+HEAT-REC-SYSTEM = No heat recovery
+HEAT-REC-SEFF = 0
+HEAT-REC-VAR-EFF = NO
+HEPA-FILTER = NO
+VENT-MECH-EXH = NO
+DESTRAT-FAN = NO
+VENT-SFP = 1.5
+SFP-TU = 0.8
+Q50-INF = 25
+DHW-GENERATOR = "SAW"
+DHW-PIPE-LEN = 0
+LIGHT-CASE = UNKNOWN
+LIGHT-TYPE = T8 Fluorescent - halophosphate - low frequency ballast
+LIGHT-DISPLAY-EFF = NO
+LIGHT-CONTROL = MANUAL
+LIGHT-DL-AUT-ZONE = YES
+LIGHT-OCC-SENS-T = NONE
+LIGHT-TIME-SWITCH = NO
+JNCT-ROOF-WALL-MC = 0.28
+JNCT-WALL-GRND-MC = 1.15
+JNCT-WALL-WALL-MC = 0.25
+JNCT-WALL-FLR-MC = 0
+JNCT-LINTEL-MC = 1.27
+JNCT-SILL-MC = 1.27
+JNCT-JAMB-MC = 1.27
+JNCT-ROOF-WALL = 0.12
+JNCT-WALL-GRND = 0.16
+JNCT-WALL-WALL = 0.09
+JNCT-WALL-FLR = 0.07
+JNCT-LINTEL = 0.3
+JNCT-SILL = 0.04
+JNCT-JAMB = 0.05
+JNCT-ACCR-DETAIL = { 0, 0, 0, 0, 0, 0, 0, 0, 0 }
+JNCT-ACCR-DETAIL-MC = { 0, 0, 0, 0, 0, 0, 0, 0, 0 }
+NIGHT-COOLING = NO
+ ..
+
+"Z0/02/sei" = WALL
+MULTIPLIER = 1
+TYPE = Conditioned adjoining space
+TYPE-ENV = Wall
+LENGTH = 2
+PITCH = 90
+AREA = 9
+ORIENTATION = South-East
+CONSTRUCTION = "Stud"
+ ..
+
+"Z0/02/nei" = WALL
+MULTIPLIER = 1
+TYPE = Conditioned adjoining space
+TYPE-ENV = Wall
+LENGTH = 1.7
+PITCH = 90
+AREA = 7.65
+ORIENTATION = North-East
+CONSTRUCTION = "Stud"
+ ..
+
+"Z0/02/nwi" = WALL
+MULTIPLIER = 1
+TYPE = Conditioned adjoining space
+TYPE-ENV = Wall
+LENGTH = 2
+PITCH = 90
+AREA = 9
+ORIENTATION = North-West
+CONSTRUCTION = "Stud"
+ ..
+
+"Z0/02/swi" = WALL
+MULTIPLIER = 1
+TYPE = Unheated adjoining space
+TYPE-ENV = Wall
+LENGTH = 1.7
+PITCH = 90
+AREA = 7.65
+ORIENTATION = South-West
+CONSTRUCTION = "Stud"
+ ..
+
+"Z0/02/ci" = WALL
+MULTIPLIER = 1
+TYPE = Conditioned adjoining space
+TYPE-ENV = Floor or Ceiling
+PITCH = 0
+AREA = 3.4
+ORIENTATION = Horizontal
+CONSTRUCTION = "Seperating CAS"
+ ..
+
+"Z0/02/fi" = WALL
+MULTIPLIER = 1
+TYPE = Unheated adjoining space
+TYPE-ENV = Floor or Ceiling
+PITCH = 0
+AREA = 3.4
+ORIENTATION = Horizontal
+CONSTRUCTION = "Seperating UNC"
+ ..
+
+"Z0/03" = ZONE
+ISBEM-ID = 13
+ACTIVITY = 1074
+ACTIVITY-NAME = Store Room
+MULTIPLIER = 1
+AREA = 20.8
+HEIGHT = 4.5
+VENT-ZONE-HVAC = ZONE
+Q-V-TYPE = Mechanical
+F-CTRL-VENT-DEM = No demand-controlled ventilation
+HEAT-REC-SYSTEM = No heat recovery
+HEAT-REC-SEFF = 0
+HEAT-REC-VAR-EFF = NO
+HEPA-FILTER = NO
+VENT-MECH-EXH = NO
+DESTRAT-FAN = NO
+VENT-SFP = 1.5
+SFP-TU = 0.8
+Q50-INF = 25
+DHW-GENERATOR = "SAW"
+DHW-PIPE-LEN = 0
+LIGHT-CASE = UNKNOWN
+LIGHT-TYPE = T8 Fluorescent - halophosphate - low frequency ballast
+LIGHT-DISPLAY-EFF = NO
+LIGHT-CONTROL = MANUAL
+LIGHT-DL-AUT-ZONE = YES
+LIGHT-OCC-SENS-T = NONE
+LIGHT-TIME-SWITCH = NO
+JNCT-ROOF-WALL-MC = 0.28
+JNCT-WALL-GRND-MC = 1.15
+JNCT-WALL-WALL-MC = 0.25
+JNCT-WALL-FLR-MC = 0
+JNCT-LINTEL-MC = 1.27
+JNCT-SILL-MC = 1.27
+JNCT-JAMB-MC = 1.27
+JNCT-ROOF-WALL = 0.12
+JNCT-WALL-GRND = 0.16
+JNCT-WALL-WALL = 0.09
+JNCT-WALL-FLR = 0.07
+JNCT-LINTEL = 0.3
+JNCT-SILL = 0.04
+JNCT-JAMB = 0.05
+JNCT-ACCR-DETAIL = { 0, 0, 0, 0, 0, 0, 0, 0, 0 }
+JNCT-ACCR-DETAIL-MC = { 0, 0, 0, 0, 0, 0, 0, 0, 0 }
+NIGHT-COOLING = NO
+ ..
+
+"Z0/03/sei" = WALL
+MULTIPLIER = 1
+TYPE = Conditioned adjoining space
+TYPE-ENV = Wall
+LENGTH = 2.6
+PITCH = 90
+AREA = 11.7
+ORIENTATION = South-East
+CONSTRUCTION = "Stud"
+ ..
+
+"Z0/03/nei" = WALL
+MULTIPLIER = 1
+TYPE = Conditioned adjoining space
+TYPE-ENV = Wall
+LENGTH = 8
+PITCH = 90
+AREA = 36
+ORIENTATION = North-East
+CONSTRUCTION = "Int"
+ ..
+
+"Z0/03/nwi" = WALL
+MULTIPLIER = 1
+TYPE = Conditioned adjoining space
+TYPE-ENV = Wall
+LENGTH = 2.6
+PITCH = 90
+AREA = 11.7
+ORIENTATION = North-West
+CONSTRUCTION = "Stud"
+ ..
+
+"Z0/03/swi" = WALL
+MULTIPLIER = 1
+TYPE = Unheated adjoining space
+TYPE-ENV = Wall
+LENGTH = 8
+PITCH = 90
+AREA = 36
+ORIENTATION = South-West
+CONSTRUCTION = "Stud"
+ ..
+
+"Z0/03/ci" = WALL
+MULTIPLIER = 1
+TYPE = Conditioned adjoining space
+TYPE-ENV = Floor or Ceiling
+PITCH = 0
+AREA = 20.8
+ORIENTATION = Horizontal
+CONSTRUCTION = "Seperating CAS"
+ ..
+
+"Z0/03/fi" = WALL
+MULTIPLIER = 1
+TYPE = Unheated adjoining space
+TYPE-ENV = Floor or Ceiling
+PITCH = 0
+AREA = 20.8
+ORIENTATION = Horizontal
+CONSTRUCTION = "Seperating UNC"
+ ..
+
+"Z0/05" = ZONE
+ISBEM-ID = 15
+ACTIVITY = 1078
+ACTIVITY-NAME = Generic Office Area
+MULTIPLIER = 1
+AREA = 8.84
+HEIGHT = 4.5
+VENT-ZONE-HVAC = ZONE
+Q-V-TYPE = Mechanical
+F-CTRL-VENT-DEM = No demand-controlled ventilation
+HEAT-REC-SYSTEM = No heat recovery
+HEAT-REC-SEFF = 0
+HEAT-REC-VAR-EFF = NO
+HEPA-FILTER = NO
+VENT-MECH-EXH = NO
+DESTRAT-FAN = NO
+VENT-SFP = 1.5
+SFP-TU = 0.8
+Q50-INF = 25
+DHW-GENERATOR = "SAW"
+DHW-PIPE-LEN = 0.6
+LIGHT-CASE = UNKNOWN
+LIGHT-TYPE = T8 Fluorescent - halophosphate - low frequency ballast
+LIGHT-DISPLAY-EFF = NO
+LIGHT-CONTROL = MANUAL
+LIGHT-DL-AUT-ZONE = YES
+LIGHT-OCC-SENS-T = NONE
+LIGHT-TIME-SWITCH = NO
+JNCT-ROOF-WALL-MC = 0.28
+JNCT-WALL-GRND-MC = 1.15
+JNCT-WALL-WALL-MC = 0.25
+JNCT-WALL-FLR-MC = 0
+JNCT-LINTEL-MC = 1.27
+JNCT-SILL-MC = 1.27
+JNCT-JAMB-MC = 1.27
+JNCT-ROOF-WALL = 0.12
+JNCT-WALL-GRND = 0.16
+JNCT-WALL-WALL = 0.09
+JNCT-WALL-FLR = 0.07
+JNCT-LINTEL = 0.3
+JNCT-SILL = 0.04
+JNCT-JAMB = 0.05
+JNCT-ACCR-DETAIL = { 0, 0, 0, 0, 0, 0, 0, 0, 0 }
+JNCT-ACCR-DETAIL-MC = { 0, 0, 0, 0, 0, 0, 0, 0, 0 }
+NIGHT-COOLING = NO
+ ..
+
+"Z0/05/sei" = WALL
+MULTIPLIER = 1
+TYPE = Conditioned adjoining space
+TYPE-ENV = Wall
+LENGTH = 1.5
+PITCH = 90
+AREA = 6.75
+ORIENTATION = South-East
+CONSTRUCTION = "Stud"
+ ..
+
+"Z0/05/nei" = WALL
+MULTIPLIER = 1
+TYPE = Conditioned adjoining space
+TYPE-ENV = Wall
+LENGTH = 3.4
+PITCH = 90
+AREA = 15.3
+ORIENTATION = North-East
+CONSTRUCTION = "Int"
+ ..
+
+"Z0/05/nwi" = WALL
+MULTIPLIER = 1
+TYPE = Conditioned adjoining space
+TYPE-ENV = Wall
+LENGTH = 2.6
+PITCH = 90
+AREA = 11.7
+ORIENTATION = North-West
+CONSTRUCTION = "Stud"
+ ..
+
+"Z0/05/swi" = WALL
+MULTIPLIER = 1
+TYPE = Unheated adjoining space
+TYPE-ENV = Wall
+LENGTH = 3.4
+PITCH = 90
+AREA = 15.3
+ORIENTATION = South-West
+CONSTRUCTION = "Stud"
+ ..
+
+"Z0/05/ci" = WALL
+MULTIPLIER = 1
+TYPE = Conditioned adjoining space
+TYPE-ENV = Floor or Ceiling
+PITCH = 0
+AREA = 8.84
+ORIENTATION = Horizontal
+CONSTRUCTION = "Seperating CAS"
+ ..
+
+"Z0/05/fi" = WALL
+MULTIPLIER = 1
+TYPE = Unheated adjoining space
+TYPE-ENV = Floor or Ceiling
+PITCH = 0
+AREA = 8.84
+ORIENTATION = Horizontal
+CONSTRUCTION = "Seperating UNC"
+ ..
+
+"Z0/05/sei.1" = WALL
+MULTIPLIER = 1
+TYPE = Unheated adjoining space
+TYPE-ENV = Wall
+LENGTH = 1.1
+PITCH = 90
+AREA = 4.95
+ORIENTATION = South-East
+CONSTRUCTION = "Stud"
+ ..
+
+"Z0/06" = ZONE
+ISBEM-ID = 16
+ACTIVITY = 1077
+ACTIVITY-NAME = Toilet
+MULTIPLIER = 1
+AREA = 5.25
+HEIGHT = 4.5
+VENT-ZONE-HVAC = ZONE
+Q-V-TYPE = Mechanical
+F-CTRL-VENT-DEM = No demand-controlled ventilation
+HEAT-REC-SYSTEM = No heat recovery
+HEAT-REC-SEFF = 0
+HEAT-REC-VAR-EFF = NO
+HEPA-FILTER = NO
+VENT-MECH-EXH = NO
+DESTRAT-FAN = NO
+VENT-SFP = 1.5
+SFP-TU = 0.8
+Q50-INF = 25
+DHW-GENERATOR = "SAW"
+DHW-PIPE-LEN = 1.2
+LIGHT-CASE = UNKNOWN
+LIGHT-TYPE = T8 Fluorescent - halophosphate - low frequency ballast
+LIGHT-DISPLAY-EFF = NO
+LIGHT-CONTROL = MANUAL
+LIGHT-DL-AUT-ZONE = YES
+LIGHT-OCC-SENS-T = NONE
+LIGHT-TIME-SWITCH = NO
+JNCT-ROOF-WALL-MC = 0.28
+JNCT-WALL-GRND-MC = 1.15
+JNCT-WALL-WALL-MC = 0.25
+JNCT-WALL-FLR-MC = 0
+JNCT-LINTEL-MC = 1.27
+JNCT-SILL-MC = 1.27
+JNCT-JAMB-MC = 1.27
+JNCT-ROOF-WALL = 0.12
+JNCT-WALL-GRND = 0.16
+JNCT-WALL-WALL = 0.09
+JNCT-WALL-FLR = 0.07
+JNCT-LINTEL = 0.3
+JNCT-SILL = 0.04
+JNCT-JAMB = 0.05
+JNCT-ACCR-DETAIL = { 0, 0, 0, 0, 0, 0, 0, 0, 0 }
+JNCT-ACCR-DETAIL-MC = { 0, 0, 0, 0, 0, 0, 0, 0, 0 }
+NIGHT-COOLING = NO
+ ..
+
+"Z0/06/sei" = WALL
+MULTIPLIER = 1
+TYPE = Conditioned adjoining space
+TYPE-ENV = Wall
+LENGTH = 0.6
+PITCH = 90
+AREA = 2.7
+ORIENTATION = South-East
+CONSTRUCTION = "Int"
+ ..
+
+"Z0/06/nei" = WALL
+MULTIPLIER = 1
+TYPE = Conditioned adjoining space
+TYPE-ENV = Wall
+LENGTH = 3.5
+PITCH = 90
+AREA = 15.75
+ORIENTATION = North-East
+CONSTRUCTION = "Int"
+ ..
+
+"Z0/06/nwi" = WALL
+MULTIPLIER = 1
+TYPE = Conditioned adjoining space
+TYPE-ENV = Wall
+LENGTH = 2.6
+PITCH = 90
+AREA = 11.7
+ORIENTATION = North-West
+CONSTRUCTION = "Stud"
+ ..
+
+"Z0/06/swi" = WALL
+MULTIPLIER = 1
+TYPE = Unheated adjoining space
+TYPE-ENV = Wall
+LENGTH = 3.5
+PITCH = 90
+AREA = 15.75
+ORIENTATION = South-West
+CONSTRUCTION = "Stud"
+ ..
+
+"Z0/06/ci" = WALL
+MULTIPLIER = 1
+TYPE = Conditioned adjoining space
+TYPE-ENV = Floor or Ceiling
+PITCH = 0
+AREA = 5.25
+ORIENTATION = Horizontal
+CONSTRUCTION = "Seperating CAS"
+ ..
+
+"Z0/06/fi" = WALL
+MULTIPLIER = 1
+TYPE = Unheated adjoining space
+TYPE-ENV = Floor or Ceiling
+PITCH = 0
+AREA = 5.25
+ORIENTATION = Horizontal
+CONSTRUCTION = "Seperating UNC"
+ ..
+
+"Z0/06/sei.1" = WALL
+MULTIPLIER = 1
+TYPE = Unheated adjoining space
+TYPE-ENV = Wall
+LENGTH = 0.9
+PITCH = 90
+AREA = 4.05
+ORIENTATION = South-East
+CONSTRUCTION = "Stud"
+ ..
+
+"RADS" = HVAC-SYSTEM
+ISBEM-ID = 12
+TYPE = Central heating using water: radiators
+HEAT-SOURCE = LTHW boiler
+CHP = NO
+FUEL-TYPE = Natural Gas
+FUEL-TYPE-COOL = Grid Supplied Electricity
+HEAT-REC-SYSTEM = No heat recovery
+HEAT-REC-SEFF = 0
+HEAT-REC-VAR-EFF = NO
+COOL-SSEER = 999999
+HEAT-SSEFF = 0.70
+AUX-ENERGY-CORR = 1
+VARIABLE-SPEED-PUMP = NO
+HEAT-GEN-SEFF = 0.8
+EFF-DEFAULT-HEAT = NO
+METERING = 1
+SFP-CHECK = NO
+CEN-TIME-CTRL = YES
+ROOM-TEMP-CTRL = YES
+ ..
+
+"Z0/03" = ZONE
+ISBEM-ID = 13
+ACTIVITY = 1074
+ACTIVITY-NAME = Store Room
+MULTIPLIER = 1
+AREA = 20.8
+HEIGHT = 4.5
+VENT-ZONE-HVAC = ZONE
+Q-V-TYPE = Mechanical
+F-CTRL-VENT-DEM = No demand-controlled ventilation
+HEAT-REC-SYSTEM = No heat recovery
+HEAT-REC-SEFF = 0
+HEAT-REC-VAR-EFF = NO
+HEPA-FILTER = NO
+VENT-MECH-EXH = NO
+DESTRAT-FAN = NO
+VENT-SFP = 1.5
+SFP-TU = 0.8
+Q50-INF = 25
+DHW-GENERATOR = "SAW"
+DHW-PIPE-LEN = 0
+LIGHT-CASE = UNKNOWN
+LIGHT-TYPE = T8 Fluorescent - halophosphate - low frequency ballast
+LIGHT-DISPLAY-EFF = NO
+LIGHT-CONTROL = MANUAL
+LIGHT-DL-AUT-ZONE = YES
+LIGHT-OCC-SENS-T = NONE
+LIGHT-TIME-SWITCH = NO
+JNCT-ROOF-WALL-MC = 0.28
+JNCT-WALL-GRND-MC = 1.15
+JNCT-WALL-WALL-MC = 0.25
+JNCT-WALL-FLR-MC = 0
+JNCT-LINTEL-MC = 1.27
+JNCT-SILL-MC = 1.27
+JNCT-JAMB-MC = 1.27
+JNCT-ROOF-WALL = 0.12
+JNCT-WALL-GRND = 0.16
+JNCT-WALL-WALL = 0.09
+JNCT-WALL-FLR = 0.07
+JNCT-LINTEL = 0.3
+JNCT-SILL = 0.04
+JNCT-JAMB = 0.05
+JNCT-ACCR-DETAIL = { 0, 0, 0, 0, 0, 0, 0, 0, 0 }
+JNCT-ACCR-DETAIL-MC = { 0, 0, 0, 0, 0, 0, 0, 0, 0 }
+NIGHT-COOLING = NO
+ ..
+
+"Z0/03/sei" = WALL
+MULTIPLIER = 1
+TYPE = Conditioned adjoining space
+TYPE-ENV = Wall
+LENGTH = 2.6
+PITCH = 90
+AREA = 11.7
+ORIENTATION = South-East
+CONSTRUCTION = "Stud"
+ ..
+
+"Z0/03/nei" = WALL
+MULTIPLIER = 1
+TYPE = Conditioned adjoining space
+TYPE-ENV = Wall
+LENGTH = 8
+PITCH = 90
+AREA = 36
+ORIENTATION = North-East
+CONSTRUCTION = "Int"
+ ..
+
+"Z0/03/nwi" = WALL
+MULTIPLIER = 1
+TYPE = Conditioned adjoining space
+TYPE-ENV = Wall
+LENGTH = 2.6
+PITCH = 90
+AREA = 11.7
+ORIENTATION = North-West
+CONSTRUCTION = "Stud"
+ ..
+
+"Z0/03/swi" = WALL
+MULTIPLIER = 1
+TYPE = Unheated adjoining space
+TYPE-ENV = Wall
+LENGTH = 8
+PITCH = 90
+AREA = 36
+ORIENTATION = South-West
+CONSTRUCTION = "Stud"
+ ..
+
+"Z0/03/ci" = WALL
+MULTIPLIER = 1
+TYPE = Conditioned adjoining space
+TYPE-ENV = Floor or Ceiling
+PITCH = 0
+AREA = 20.8
+ORIENTATION = Horizontal
+CONSTRUCTION = "Seperating CAS"
+ ..
+
+"Z0/03/fi" = WALL
+MULTIPLIER = 1
+TYPE = Unheated adjoining space
+TYPE-ENV = Floor or Ceiling
+PITCH = 0
+AREA = 20.8
+ORIENTATION = Horizontal
+CONSTRUCTION = "Seperating UNC"
+ ..
+
+"Z0/05" = ZONE
+ISBEM-ID = 15
+ACTIVITY = 1078
+ACTIVITY-NAME = Generic Office Area
+MULTIPLIER = 1
+AREA = 8.84
+HEIGHT = 4.5
+VENT-ZONE-HVAC = ZONE
+Q-V-TYPE = Mechanical
+F-CTRL-VENT-DEM = No demand-controlled ventilation
+HEAT-REC-SYSTEM = No heat recovery
+HEAT-REC-SEFF = 0
+HEAT-REC-VAR-EFF = NO
+HEPA-FILTER = NO
+VENT-MECH-EXH = NO
+DESTRAT-FAN = NO
+VENT-SFP = 1.5
+SFP-TU = 0.8
+Q50-INF = 25
+DHW-GENERATOR = "SAW"
+DHW-PIPE-LEN = 0.6
+LIGHT-CASE = UNKNOWN
+LIGHT-TYPE = T8 Fluorescent - halophosphate - low frequency ballast
+LIGHT-DISPLAY-EFF = NO
+LIGHT-CONTROL = MANUAL
+LIGHT-DL-AUT-ZONE = YES
+LIGHT-OCC-SENS-T = NONE
+LIGHT-TIME-SWITCH = NO
+JNCT-ROOF-WALL-MC = 0.28
+JNCT-WALL-GRND-MC = 1.15
+JNCT-WALL-WALL-MC = 0.25
+JNCT-WALL-FLR-MC = 0
+JNCT-LINTEL-MC = 1.27
+JNCT-SILL-MC = 1.27
+JNCT-JAMB-MC = 1.27
+JNCT-ROOF-WALL = 0.12
+JNCT-WALL-GRND = 0.16
+JNCT-WALL-WALL = 0.09
+JNCT-WALL-FLR = 0.07
+JNCT-LINTEL = 0.3
+JNCT-SILL = 0.04
+JNCT-JAMB = 0.05
+JNCT-ACCR-DETAIL = { 0, 0, 0, 0, 0, 0, 0, 0, 0 }
+JNCT-ACCR-DETAIL-MC = { 0, 0, 0, 0, 0, 0, 0, 0, 0 }
+NIGHT-COOLING = NO
+ ..
+
+"Z0/05/sei" = WALL
+MULTIPLIER = 1
+TYPE = Conditioned adjoining space
+TYPE-ENV = Wall
+LENGTH = 1.5
+PITCH = 90
+AREA = 6.75
+ORIENTATION = South-East
+CONSTRUCTION = "Stud"
+ ..
+
+"Z0/05/nei" = WALL
+MULTIPLIER = 1
+TYPE = Conditioned adjoining space
+TYPE-ENV = Wall
+LENGTH = 3.4
+PITCH = 90
+AREA = 15.3
+ORIENTATION = North-East
+CONSTRUCTION = "Int"
+ ..
+
+"Z0/05/nwi" = WALL
+MULTIPLIER = 1
+TYPE = Conditioned adjoining space
+TYPE-ENV = Wall
+LENGTH = 2.6
+PITCH = 90
+AREA = 11.7
+ORIENTATION = North-West
+CONSTRUCTION = "Stud"
+ ..
+
+"Z0/05/swi" = WALL
+MULTIPLIER = 1
+TYPE = Unheated adjoining space
+TYPE-ENV = Wall
+LENGTH = 3.4
+PITCH = 90
+AREA = 15.3
+ORIENTATION = South-West
+CONSTRUCTION = "Stud"
+ ..
+
+"Z0/05/ci" = WALL
+MULTIPLIER = 1
+TYPE = Conditioned adjoining space
+TYPE-ENV = Floor or Ceiling
+PITCH = 0
+AREA = 8.84
+ORIENTATION = Horizontal
+CONSTRUCTION = "Seperating CAS"
+ ..
+
+"Z0/05/fi" = WALL
+MULTIPLIER = 1
+TYPE = Unheated adjoining space
+TYPE-ENV = Floor or Ceiling
+PITCH = 0
+AREA = 8.84
+ORIENTATION = Horizontal
+CONSTRUCTION = "Seperating UNC"
+ ..
+
+"Z0/05/sei.1" = WALL
+MULTIPLIER = 1
+TYPE = Unheated adjoining space
+TYPE-ENV = Wall
+LENGTH = 1.1
+PITCH = 90
+AREA = 4.95
+ORIENTATION = South-East
+CONSTRUCTION = "Stud"
+ ..
+
+"Z0/06" = ZONE
+ISBEM-ID = 16
+ACTIVITY = 1077
+ACTIVITY-NAME = Toilet
+MULTIPLIER = 1
+AREA = 5.25
+HEIGHT = 4.5
+VENT-ZONE-HVAC = ZONE
+Q-V-TYPE = Mechanical
+F-CTRL-VENT-DEM = No demand-controlled ventilation
+HEAT-REC-SYSTEM = No heat recovery
+HEAT-REC-SEFF = 0
+HEAT-REC-VAR-EFF = NO
+HEPA-FILTER = NO
+VENT-MECH-EXH = NO
+DESTRAT-FAN = NO
+VENT-SFP = 1.5
+SFP-TU = 0.8
+Q50-INF = 25
+DHW-GENERATOR = "SAW"
+DHW-PIPE-LEN = 1.2
+LIGHT-CASE = UNKNOWN
+LIGHT-TYPE = T8 Fluorescent - halophosphate - low frequency ballast
+LIGHT-DISPLAY-EFF = NO
+LIGHT-CONTROL = MANUAL
+LIGHT-DL-AUT-ZONE = YES
+LIGHT-OCC-SENS-T = NONE
+LIGHT-TIME-SWITCH = NO
+JNCT-ROOF-WALL-MC = 0.28
+JNCT-WALL-GRND-MC = 1.15
+JNCT-WALL-WALL-MC = 0.25
+JNCT-WALL-FLR-MC = 0
+JNCT-LINTEL-MC = 1.27
+JNCT-SILL-MC = 1.27
+JNCT-JAMB-MC = 1.27
+JNCT-ROOF-WALL = 0.12
+JNCT-WALL-GRND = 0.16
+JNCT-WALL-WALL = 0.09
+JNCT-WALL-FLR = 0.07
+JNCT-LINTEL = 0.3
+JNCT-SILL = 0.04
+JNCT-JAMB = 0.05
+JNCT-ACCR-DETAIL = { 0, 0, 0, 0, 0, 0, 0, 0, 0 }
+JNCT-ACCR-DETAIL-MC = { 0, 0, 0, 0, 0, 0, 0, 0, 0 }
+NIGHT-COOLING = NO
+ ..
+
+"Z0/06/sei" = WALL
+MULTIPLIER = 1
+TYPE = Conditioned adjoining space
+TYPE-ENV = Wall
+LENGTH = 0.6
+PITCH = 90
+AREA = 2.7
+ORIENTATION = South-East
+CONSTRUCTION = "Int"
+ ..
+
+"Z0/06/nei" = WALL
+MULTIPLIER = 1
+TYPE = Conditioned adjoining space
+TYPE-ENV = Wall
+LENGTH = 3.5
+PITCH = 90
+AREA = 15.75
+ORIENTATION = North-East
+CONSTRUCTION = "Int"
+ ..
+
+"Z0/06/nwi" = WALL
+MULTIPLIER = 1
+TYPE = Conditioned adjoining space
+TYPE-ENV = Wall
+LENGTH = 2.6
+PITCH = 90
+AREA = 11.7
+ORIENTATION = North-West
+CONSTRUCTION = "Stud"
+ ..
+
+"Z0/06/swi" = WALL
+MULTIPLIER = 1
+TYPE = Unheated adjoining space
+TYPE-ENV = Wall
+LENGTH = 3.5
+PITCH = 90
+AREA = 15.75
+ORIENTATION = South-West
+CONSTRUCTION = "Stud"
+ ..
+
+"Z0/06/ci" = WALL
+MULTIPLIER = 1
+TYPE = Conditioned adjoining space
+TYPE-ENV = Floor or Ceiling
+PITCH = 0
+AREA = 5.25
+ORIENTATION = Horizontal
+CONSTRUCTION = "Seperating CAS"
+ ..
+
+"Z0/06/fi" = WALL
+MULTIPLIER = 1
+TYPE = Unheated adjoining space
+TYPE-ENV = Floor or Ceiling
+PITCH = 0
+AREA = 5.25
+ORIENTATION = Horizontal
+CONSTRUCTION = "Seperating UNC"
+ ..
+
+"Z0/06/sei.1" = WALL
+MULTIPLIER = 1
+TYPE = Unheated adjoining space
+TYPE-ENV = Wall
+LENGTH = 0.9
+PITCH = 90
+AREA = 4.05
+ORIENTATION = South-East
+CONSTRUCTION = "Stud"
+ ..
+
+"Zones without HVAC system" = HVAC-SYSTEM
+TYPE = No Heating or Cooling
+HEAT-GEN-SEFF = 0.1
+COOL-GEN-SEER = 0.1
+ ..
+
+"Z0/04" = ZONE
+ISBEM-ID = 14
+ACTIVITY = 1067
+ACTIVITY-NAME = Circulation area (corridors and stairways) - non public
+MULTIPLIER = 1
+AREA = 36.55
+HEIGHT = 4.5
+VENT-ZONE-HVAC = ZONE
+Q-V-TYPE = Natural Supply
+F-CTRL-VENT-DEM = No demand-controlled ventilation
+HEAT-REC-SYSTEM = No heat recovery
+HEAT-REC-SEFF = 0
+HEAT-REC-VAR-EFF = NO
+HEPA-FILTER = NO
+VENT-MECH-EXH = NO
+DESTRAT-FAN = NO
+VENT-SFP = 1.5
+SFP-TU = 0.8
+Q50-INF = 25
+DHW-GENERATOR = "SAW"
+DHW-PIPE-LEN = 0
+LIGHT-CASE = UNKNOWN
+LIGHT-TYPE = T8 Fluorescent - halophosphate - low frequency ballast
+LIGHT-DISPLAY-EFF = NO
+LIGHT-CONTROL = MANUAL
+LIGHT-DL-AUT-ZONE = YES
+LIGHT-OCC-SENS-T = NONE
+LIGHT-TIME-SWITCH = NO
+JNCT-ROOF-WALL-MC = 0.28
+JNCT-WALL-GRND-MC = 1.15
+JNCT-WALL-WALL-MC = 0.25
+JNCT-WALL-FLR-MC = 0
+JNCT-LINTEL-MC = 1.27
+JNCT-SILL-MC = 1.27
+JNCT-JAMB-MC = 1.27
+JNCT-ROOF-WALL = 0.12
+JNCT-WALL-GRND = 0.16
+JNCT-WALL-WALL = 0.09
+JNCT-WALL-FLR = 0.07
+JNCT-LINTEL = 0.3
+JNCT-SILL = 0.04
+JNCT-JAMB = 0.05
+JNCT-ACCR-DETAIL = { 0, 0, 0, 0, 0, 0, 0, 0, 0 }
+JNCT-ACCR-DETAIL-MC = { 0, 0, 0, 0, 0, 0, 0, 0, 0 }
+NIGHT-COOLING = NO
+ ..
+
+"Z0/04/sei" = WALL
+MULTIPLIER = 1
+TYPE = Conditioned adjoining space
+TYPE-ENV = Wall
+LENGTH = 3.4
+PITCH = 90
+AREA = 15.3
+ORIENTATION = South-East
+CONSTRUCTION = "Int"
+ ..
+
+"Z0/04/nei" = WALL
+MULTIPLIER = 1
+TYPE = Conditioned adjoining space
+TYPE-ENV = Wall
+LENGTH = 16.8
+PITCH = 90
+AREA = 75.6
+ORIENTATION = North-East
+CONSTRUCTION = "Stud"
+ ..
+
+"Z0/04/nwi" = WALL
+MULTIPLIER = 1
+TYPE = Conditioned adjoining space
+TYPE-ENV = Wall
+LENGTH = 3.4
+PITCH = 90
+AREA = 15.3
+ORIENTATION = North-West
+CONSTRUCTION = "Stud"
+ ..
+
+"Z0/04/swi" = WALL
+MULTIPLIER = 1
+TYPE = Conditioned adjoining space
+TYPE-ENV = Wall
+LENGTH = 20
+PITCH = 90
+AREA = 90
+ORIENTATION = South-West
+CONSTRUCTION = "Int"
+ ..
+
+"Z0/04/ci" = WALL
+MULTIPLIER = 1
+TYPE = Conditioned adjoining space
+TYPE-ENV = Floor or Ceiling
+PITCH = 0
+AREA = 36.55
+ORIENTATION = Horizontal
+CONSTRUCTION = "Seperating CAS"
+ ..
+
+"Z0/04/fi" = WALL
+MULTIPLIER = 1
+TYPE = Unheated adjoining space
+TYPE-ENV = Floor or Ceiling
+PITCH = 0
+AREA = 36.55
+ORIENTATION = Horizontal
+CONSTRUCTION = "Seperating UNC"
+ ..
+
+"Z0/04/nei.1" = WALL
+MULTIPLIER = 1
+TYPE = Conditioned adjoining space
+TYPE-ENV = Wall
+LENGTH = 2.7
+PITCH = 90
+AREA = 12.15
+ORIENTATION = North-East
+CONSTRUCTION = "Int"
+ ..
+
+"A/C" = HVAC-SYSTEM
+ISBEM-ID = 11
+TYPE = Split or multi-split system
+HEAT-SOURCE = Heat pump (electric): air source
+CHP = NO
+FUEL-TYPE = Grid Supplied Electricity
+FUEL-TYPE-COOL = Grid Supplied Electricity
+HEAT-REC-SYSTEM = No heat recovery
+HEAT-REC-SEFF = 0
+HEAT-REC-VAR-EFF = NO
+COOL-SSEER = 2.7
+HEAT-SSEFF = 3.4
+AUX-ENERGY-CORR = 0
+VARIABLE-SPEED-PUMP = NO
+HEAT-GEN-SEFF = 3.61
+EFF-DEFAULT-HEAT = NO
+COOL-GEN-SEER = 3.21
+EFF-DEFAULT-COOL = NO
+COOL-GEN-EER = 3.21
+METERING = 1
+SFP-CHECK = NO
+ROOM-TIME-CTRL = YES
+ROOM-TEMP-CTRL = YES
+WEATHER-COMP = YES
+ ..
+
+"Z0/01" = ZONE
+ISBEM-ID = 11
+ACTIVITY = 1071
+ACTIVITY-NAME = Small Shop Unit Sales area - general
+MULTIPLIER = 1
+AREA = 119.37
+HEIGHT = 4.5
+VENT-ZONE-HVAC = ZONE
+Q-V-TYPE = Mechanical
+F-CTRL-VENT-DEM = No demand-controlled ventilation
+HEAT-REC-SYSTEM = No heat recovery
+HEAT-REC-SEFF = 0
+HEAT-REC-VAR-EFF = NO
+HEPA-FILTER = NO
+VENT-MECH-EXH = NO
+DESTRAT-FAN = NO
+VENT-SFP = 1.5
+SFP-TU = 0.8
+Q50-INF = 25
+DHW-GENERATOR = "SAW"
+DHW-PIPE-LEN = 0
+LIGHT-CASE = UNKNOWN
+LIGHT-TYPE = Tungsten or Halogen
+LIGHT-DISPLAY-EFF = NO
+LIGHT-CONTROL = MANUAL
+LIGHT-DL-AUT-ZONE = YES
+LIGHT-OCC-SENS-T = NONE
+LIGHT-TIME-SWITCH = NO
+JNCT-ROOF-WALL-MC = 0.28
+JNCT-WALL-GRND-MC = 1.15
+JNCT-WALL-WALL-MC = 0.25
+JNCT-WALL-FLR-MC = 0
+JNCT-LINTEL-MC = 1.27
+JNCT-SILL-MC = 1.27
+JNCT-JAMB-MC = 1.27
+JNCT-ROOF-WALL = 0.12
+JNCT-WALL-GRND = 0.16
+JNCT-WALL-WALL = 0.09
+JNCT-WALL-FLR = 0.07
+JNCT-LINTEL = 0.3
+JNCT-SILL = 0.04
+JNCT-JAMB = 0.05
+JNCT-ACCR-DETAIL = { 0, 0, 0, 0, 0, 0, 0, 0, 0 }
+JNCT-ACCR-DETAIL-MC = { 0, 0, 0, 0, 0, 0, 0, 0, 0 }
+NIGHT-COOLING = NO
+ ..
+
+"Z0/01/sei" = WALL
+MULTIPLIER = 1
+TYPE = Conditioned adjoining space
+TYPE-ENV = Wall
+LENGTH = 2.8
+PITCH = 90
+AREA = 12.6
+ORIENTATION = South-East
+CONSTRUCTION = "Stud"
+ ..
+
+"Z0/01/ei" = WALL
+MULTIPLIER = 1
+TYPE = Conditioned adjoining space
+TYPE-ENV = Wall
+LENGTH = 4.4
+PITCH = 90
+AREA = 19.8
+ORIENTATION = East
+CONSTRUCTION = "Int"
+ ..
+
+"Z0/01/nei" = WALL
+MULTIPLIER = 1
+TYPE = Conditioned adjoining space
+TYPE-ENV = Wall
+LENGTH = 15.7
+PITCH = 90
+AREA = 70.65
+ORIENTATION = North-East
+CONSTRUCTION = "Int"
+ ..
+
+"Z0/01/nwi" = WALL
+MULTIPLIER = 1
+TYPE = Conditioned adjoining space
+TYPE-ENV = Wall
+LENGTH = 6.4
+PITCH = 90
+AREA = 21.76
+ORIENTATION = North-West
+CONSTRUCTION = "N/G"
+ ..
+
+"Z0/01/swi" = WALL
+MULTIPLIER = 1
+TYPE = Conditioned adjoining space
+TYPE-ENV = Wall
+LENGTH = 17.2
+PITCH = 90
+AREA = 77.4
+ORIENTATION = South-West
+CONSTRUCTION = "Int"
+ ..
+
+"Z0/01/ci" = WALL
+MULTIPLIER = 1
+TYPE = Conditioned adjoining space
+TYPE-ENV = Floor or Ceiling
+PITCH = 0
+AREA = 119.37
+ORIENTATION = Horizontal
+CONSTRUCTION = "Seperating CAS"
+ ..
+
+"Z0/01/fi" = WALL
+MULTIPLIER = 1
+TYPE = Unheated adjoining space
+TYPE-ENV = Floor or Ceiling
+PITCH = 0
+AREA = 119.37
+ORIENTATION = Horizontal
+CONSTRUCTION = "Seperating UNC"
+ ..
+
+"Z0/01/sei.1" = WALL
+MULTIPLIER = 1
+TYPE = Unheated adjoining space
+TYPE-ENV = Wall
+LENGTH = 1.4
+PITCH = 90
+AREA = 6.3
+ORIENTATION = South-East
+CONSTRUCTION = "Stud"
+ ..
+
+"Z0/01/nwi.1" = WALL
+MULTIPLIER = 1
+TYPE = Conditioned adjoining space
+TYPE-ENV = Wall
+LENGTH = 6.4
+PITCH = 90
+AREA = 7.04
+ORIENTATION = North-West
+CONSTRUCTION = "Int"
+ ..
+
+"SBEM-REC" = REC-PROJECT
+ ..
+
