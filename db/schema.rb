@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_01_30_194060) do
+ActiveRecord::Schema[7.0].define(version: 2023_01_30_194061) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "hstore"
   enable_extension "plpgsql"
@@ -46,7 +46,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_30_194060) do
   create_table "imports", force: :cascade do |t|
     t.string "file_name"
     t.bigint "user_submission_id", null: false
-    t.hstore "fields"
+    t.jsonb "fields"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_submission_id"], name: "index_imports_on_user_submission_id"
