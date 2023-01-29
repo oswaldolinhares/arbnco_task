@@ -13,7 +13,7 @@ class UserSubmission < ApplicationRecord
 
   def process_files
     files.each do |file|
-      ProcessFileWorker.perform_async(file, self)
+      ProcessFileWorker.perform_async(file.id, id)
     end
   end
 end

@@ -6,4 +6,5 @@ Rails.application.routes.draw do
 
   resources :user_submissions, only: %i[index new create show]
   resources :imports, only: %i[index show]
+  resources :object_items, only: %i[index show]
 end

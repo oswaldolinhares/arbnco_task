@@ -10,7 +10,7 @@ RSpec.describe UserSubmissions::ProcessFile, type: :service do
       it "shoud save the contents of the inp file in the import table" do
         user_submission = create(:user_submission)
 
-        described_class.call(user_submission.files.first, user_submission)
+        described_class.call(user_submission.files.first.id, user_submission.id)
 
         expect(Import.all.count).to eq 1
       end
@@ -18,7 +18,7 @@ RSpec.describe UserSubmissions::ProcessFile, type: :service do
       it "shoud save objects present in the inp file separately in the object item table" do
         user_submission = create(:user_submission)
 
-        described_class.call(user_submission.files.first, user_submission)
+        described_class.call(user_submission.files.first.id, user_submission.id)
 
         expect(ObjectItem.all.count).to eq 765
       end

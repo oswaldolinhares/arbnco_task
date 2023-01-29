@@ -4,10 +4,10 @@ module UserSubmissions
   class ProcessFile < ApplicationService
     attr_reader :file, :user_submission
 
-    def initialize(file, user_submission)
+    def initialize(file_id, user_submission_id)
       super()
-      @file = file
-      @user_submission = user_submission
+      @user_submission = UserSubmission.find(user_submission_id)
+      @file = @user_submission.files.find(file_id)
     end
 
     def call
