@@ -33,7 +33,7 @@ group :development, :test do
   gem "rubocop-rails", require: false
   gem "rubocop-rspec", require: false
   gem "vcr"
-  gem 'webmock'
+  gem "webmock"
 end
 
 group :development do
@@ -44,6 +44,7 @@ end
 group :test do
   gem "capybara"
   gem "database_cleaner-active_record"
+  gem "rspec-sidekiq"
   gem "selenium-webdriver"
   gem "shoulda-matchers"
   gem "simplecov", require: false
