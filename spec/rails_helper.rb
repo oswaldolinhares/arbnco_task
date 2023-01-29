@@ -26,6 +26,19 @@ RSpec.configure do |config|
   config.infer_spec_type_from_file_location!
   config.filter_rails_from_backtrace!
 
+  require "webmock/rspec"
+  require "vcr"
+
+  VCR.configure do |c|
+    c.cassette_library_dir = "spec/vcr_cassettes"
+    c.hook_into :webmock
+    c.configure_rspec_metadata!
+    c.allow_http_connections_when_no_cassette = true
+    c.before_record do |i|
+      i.response.body.force_encoding("UTF-8")
+    end
+  end
+
   # DatabaseCleaner
   config.before(:suite) do
     DatabaseCleaner.strategy = :transaction
