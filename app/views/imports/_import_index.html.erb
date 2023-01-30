@@ -18,11 +18,16 @@
 
       <td colspan="4">
         <% if action_name != "show" %>
-          <%= link_to "VER", import, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+          <%= link_to "Show Import", import, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
         <% end %>
       </td>
+
+      <td colspan="4">
+        <%= link_to 'Show Objects', object_items_path(import_id: import.id), class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium"%>
+      </td> 
+
       <td colspan="4">
         <%= link_to 'Download', import_url(import, format: :inp), class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium"%>
-      </td>      
+      </td>   
     </tr>
   </tbody>

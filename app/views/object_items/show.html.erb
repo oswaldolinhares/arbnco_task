@@ -1,0 +1,28 @@
+<div class="mx-auto md:w-2/3 w-full flex">
+  <div class="mx-auto">
+    <% if notice.present? %>
+      <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
+    <% end %>
+  <h1>Show Object Item</h1>
+
+  <table class="my-5">  
+    <thead>
+      <tr>
+        <th>Import Id:</th>
+        <th>Name:</th>
+        <th>Object Type:</th>
+        <th>Properties</th>
+      </tr>
+    </thead> 
+    <tbody>
+      <tr>
+        <td><%= @object_item.import.id %></td>
+        <td><%= @object_item.name %></td>
+        <td><%= @object_item.object_type.name %></td>
+        <td><%= @object_item.properties %></td>
+      </tr>
+    </tbody>
+  </table>
+    <%= link_to 'Back to imports', object_items_path(import_id: params[:import_id]), class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+  </div>
+</div>
