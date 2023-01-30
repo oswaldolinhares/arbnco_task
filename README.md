@@ -48,4 +48,3 @@ The .inp files can be accessed at https://arbnco.herokuapp.com/imports/id.inp.
 ```console
 rails s && bundle exec sidekiq -q default -e development
 ```
-
