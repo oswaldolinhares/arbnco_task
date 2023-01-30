@@ -12,6 +12,17 @@
   </head>
 
   <body>
+    <nav class="flex items-center justify-between bg-gray-800 py-3 px-5">
+      <div class="flex items-center">
+        <h1 class="text-white font-medium">ArbncoTask</h1>
+      </div>
+
+      <div class="inline">
+        <%= link_to "New Submission", new_user_submission_path, class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
+        <%= link_to "Imports", imports_path, class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
+      </div>
+    </nav>
+  
     <main class="container mx-auto mt-28 px-5 flex">
       <%= yield %>
     </main>
