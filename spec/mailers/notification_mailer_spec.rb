@@ -25,7 +25,7 @@ RSpec.describe NotificationMailer do
       mail = described_class.with(import: import, email: user_submission.email)
                             .notify.deliver_now
 
-      expect(mail.from).to eq(["oswaldolinhares@arbnco.com"])
+      expect(mail.from).to eq(["oswaldolinhares@gmail.com"])
     end
   end
 end
