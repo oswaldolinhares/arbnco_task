@@ -39,6 +39,7 @@ end
 group :development do
   gem "guard-rspec", require: false
   gem "web-console"
+  gem "letter_opener"
 end
 
 group :test do

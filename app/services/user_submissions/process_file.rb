@@ -13,6 +13,7 @@ module UserSubmissions
     def call
       create_imported_file
       create_object_items
+      SendGrid::Notify.call(@imported_file, @user_submission.email)
     end
 
     private

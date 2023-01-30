@@ -7,8 +7,6 @@ Bundler.require(*Rails.groups)
 module ArbncoTask
   class Application < Rails::Application
     config.load_defaults 7.0
-    config.i18n.default_locale = :'pt-BR'
-    config.time_zone = 'Brasilia'
 
     config.active_job.queue_adapter = :sidekiq
 

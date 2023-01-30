@@ -1,5 +1,7 @@
 ---
 en:
+  email_subjects:
+    files_processed: "The file was processed!"
   activerecord:
     errors:
       messages:
