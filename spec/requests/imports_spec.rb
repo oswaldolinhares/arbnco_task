@@ -3,8 +3,11 @@
 require "rails_helper"
 
 RSpec.describe "/imports" do
+  let(:user_submission) { create(:user_submission) }
   let(:valid_attributes) do
-    skip("Add a hash of attributes valid for your model")
+    { file_name: "ultrasecret",
+      user_submission: user_submission,
+      fields: [{ "OBJECT" => "WALL" }] }
   end
 
   describe "GET /index" do

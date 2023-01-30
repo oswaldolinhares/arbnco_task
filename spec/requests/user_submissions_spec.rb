@@ -3,6 +3,8 @@
 require "rails_helper"
 
 RSpec.describe "/user_submissions" do
+  let(:file2) { { files: [Rack::Test::UploadedFile.new("spec/files/model-1.inp", "application/octet-stream")] } }
+  let(:file3) { { files: [Rack::Test::UploadedFile.new("spec/files/model-2.inp", "application/octet-stream")] } }
   let(:valid_attributes) do
     { email: "example@email.com",
       files: [Rack::Test::UploadedFile.new("spec/files/model.inp", "application/octet-stream")] }
@@ -46,6 +48,22 @@ RSpec.describe "/user_submissions" do
       it "redirects to the created user_submission" do
         post user_submissions_url, params: { user_submission: valid_attributes }
         expect(response).to redirect_to(user_submission_url(UserSubmission.last))
+      end
+    end
+
+    context "with valid parameters with model-1.inp" do
+      it "creates a new UserSubmission" do
+        expect do
+          post user_submissions_url, params: { user_submission: valid_attributes.merge(file2) }
+        end.to change(UserSubmission, :count).by(1)
+      end
+    end
+
+    context "with valid parameters with model-2.inp" do
+      it "creates a new UserSubmission" do
+        expect do
+          post user_submissions_url, params: { user_submission: valid_attributes.merge(file3) }
+        end.to change(UserSubmission, :count).by(1)
       end
     end
 
