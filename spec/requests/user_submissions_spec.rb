@@ -5,7 +5,7 @@ require "rails_helper"
 RSpec.describe "/user_submissions" do
   let(:valid_attributes) do
     { email: "example@email.com",
-      files: [Rack::Test::UploadedFile.new(File.open(Rails.root.join("spec/files/model.inp")))] }
+      files: [Rack::Test::UploadedFile.new("spec/files/model.inp", "application/octet-stream")] }
   end
 
   let(:invalid_attributes) do

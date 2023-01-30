@@ -7,6 +7,8 @@ class UserSubmission < ApplicationRecord
   validates :email, presence: true, format: { with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i },
                     length: { in: 10..256 }
 
+  validates :files, attached: true, content_type: "application/octet-stream"
+
   after_save :process_files
 
   private
