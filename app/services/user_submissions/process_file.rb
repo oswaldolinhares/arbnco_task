@@ -20,7 +20,7 @@ module UserSubmissions
 
     def create_imported_file
       @imported_file = Import.create(file_name: file.filename.to_s, user_submission: user_submission,
-                                     fields: converted_file.pluck(:properties))
+                                     fields: converted_file.pluck(:properties).to_json)
     end
 
     def create_object_items

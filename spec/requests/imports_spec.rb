@@ -7,7 +7,7 @@ RSpec.describe "/imports" do
   let(:valid_attributes) do
     { file_name: "ultrasecret",
       user_submission: user_submission,
-      fields: [{ "OBJECT" => "WALL" }] }
+      fields: [{ "OBJECT" => "WALL" }].to_json }
   end
 
   describe "GET /index" do
