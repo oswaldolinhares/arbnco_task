@@ -10,5 +10,7 @@
       <th>Created At</th>
     </tr>
   </thead>    
-    <%= render @imports %>
+<% @imports.each do |import| %>
+    <%= render 'imports/import_index', import: import %>
+<% end %>
 </table>

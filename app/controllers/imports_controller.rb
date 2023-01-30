@@ -9,7 +9,14 @@ class ImportsController < ApplicationController
   end
 
   # GET /imports/1 or /imports/1.json
-  def show; end
+  def show
+    respond_to do |format|
+      format.html
+      format.inp do
+        render mime_type: Mime::Type.lookup("application/octet-stream")
+      end
+    end
+  end
 
   private
 

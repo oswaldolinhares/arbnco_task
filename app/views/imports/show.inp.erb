@@ -1,0 +1,6 @@
+<% @import.fields.each do |hash| %>
+  <% hash.each_with_index do |(key,val),index| %>
+    <%= index == 0 ? raw("\"#{key}\" = #{val}") : "\t#{key} = #{val}" %>
+  <% end %>
+  <%= " .. \n" %>
+<% end %>
