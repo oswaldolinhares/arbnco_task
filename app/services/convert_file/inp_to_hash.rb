@@ -45,21 +45,23 @@ module ConvertFile
     end
 
     def format_properties(properties)
-      to_hash(format_elements(split_properties(properties)))
+      to_hash(clean_array(generate_array(split_properties(properties))))
     end
 
-    def split_properties(properties)
-      properties.split("\n")
+    def split_properties(elements)
+      elements.split("\n")
     end
 
-    def format_elements(elements)
-      elements.map do |e|
-        e.gsub(/\s+/, "").delete('"').split("=").map(&:strip)
-      end
+    def generate_array(elements)
+      elements.map { |x| x.split("=", 2).map(&:strip) }
     end
 
-    def to_hash(formatted_elements)
-      formatted_elements.to_h { |e| e.size == 1 ? [e[0], ""] : e }
+    def clean_array(elements)
+      elements.map! { |x| [x[0], x[1].gsub(/^\s*"|"\s*$/, "").gsub(/^\s+|\s+$/, "")] }
+    end
+
+    def to_hash(elements)
+      elements.to_h
     end
   end
 end
