@@ -19,7 +19,7 @@
         <td><%= @object_item.import.id %></td>
         <td><%= @object_item.name %></td>
         <td><%= @object_item.object_type.name %></td>
-        <td><%= @object_item.properties %></td>
+        <td><%= JSON.parse(@object_item.properties) %></td>
       </tr>
     </tbody>
   </table>

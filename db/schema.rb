@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_01_30_194061) do
+ActiveRecord::Schema[7.0].define(version: 2023_01_30_194062) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "hstore"
   enable_extension "plpgsql"
@@ -56,7 +56,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_30_194061) do
     t.bigint "import_id", null: false
     t.string "name"
     t.bigint "object_type_id", null: false
-    t.hstore "properties"
+    t.jsonb "properties"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["import_id"], name: "index_object_items_on_import_id"

@@ -16,7 +16,7 @@
         <td><%= object_item.import.id %></td>
         <td><%= object_item.name %></td>
         <td><%= object_item.object_type.name %></td>
-        <td><%= object_item.properties.to_s.truncate(50, omission: '') %>...</td>
+        <td><%= JSON.parse(object_item.properties).to_s.truncate(50, omission: '') %>...</td>
         <td colspan="4">
           <%= link_to 'Show', object_item_path(object_item, import_id: @import.id), class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %></td>
         </td> 

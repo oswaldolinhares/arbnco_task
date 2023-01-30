@@ -24,13 +24,13 @@ module UserSubmissions
     end
 
     def create_object_items
-      ObjectItem.create!(converted_file.map do |hash|
-                           hash.tap do |h|
-                             h.delete(:user_submission)
-                             h[:properties].shift
-                             h.merge!(import: @imported_file)
-                           end
-                         end)
+      converted_file.each do |hash|
+        hash[:properties].shift
+        ObjectItem.create(import: @imported_file,
+                          name: hash[:name],
+                          object_type: hash[:object_type],
+                          properties: hash[:properties].to_json)
+      end
     end
 
     def converted_file
