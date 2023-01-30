@@ -31,12 +31,12 @@ module ConvertFile
 
       dowloaded_file.split(FILE_SPLIT_REGEX).each do |file_section|
         name, object, properties = file_section.match(EXTRACT_GROUPS_REGEX).captures
-        properties = format_properties(properties) unless properties.nil?
+        properties = format_properties(properties) if properties
 
         objects << { name: name,
                      object_type: get_object_type(object),
                      user_submission: user_submission,
-                     properties: { name.to_s => object.to_s }.merge(properties) }
+                     properties: properties ? { name.to_s => object.to_s }.merge(properties) : { name.to_s => object.to_s } }
       end
 
       # dowloaded_file.split(FILE_SPLIT_REGEX).each do
